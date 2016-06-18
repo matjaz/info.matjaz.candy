@@ -6,7 +6,7 @@
   "description": {
     "en": "Homey productivity boost"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "compatibility": "0.x",
   "category": [
     "tools"
@@ -14,6 +14,15 @@
   "author": {
     "name": "Matjaž Lipuš",
     "email": "matjazl@gmail.com"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Matjaž Lipuš",
+        "website": "http://matjaz.info",
+        "email": "matjazl@gmail.com"
+      }
+    ]
   },
   "images": {
     "large": "assets/images/large.png",
