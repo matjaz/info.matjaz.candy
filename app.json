@@ -1,0 +1,53 @@
+{
+  "id": "info.matjaz.candy",
+  "name": {
+    "en": "Candy"
+  },
+  "description": {
+    "en": "Homey productivity boost"
+  },
+  "version": "0.1.0",
+  "compatibility": "0.x",
+  "category": [
+    "tools"
+  ],
+  "author": {
+    "name": "Matjaž Lipuš",
+    "email": "matjazl@gmail.com"
+  },
+  "images": {
+    "large": "assets/images/large.png",
+    "small": "assets/images/small.png"
+  },
+  "flow": {
+    "actions": [{
+      "id": "enableFolderFlows",
+      "title": {
+        "en": "Enable all folder flows"
+      },
+      "args": [
+        {
+          "name": "folder",
+          "type": "autocomplete",
+          "placeholder": {
+            "en": "Folder name..."
+          }
+        }
+      ]
+    }, {
+      "id": "disableFolderFlows",
+      "title": {
+        "en": "Disable all folder flows"
+      },
+      "args": [
+        {
+          "name": "folder",
+          "type": "autocomplete",
+          "placeholder": {
+            "en": "Folder name..."
+          }
+        }
+      ]
+    }]
+  }
+}

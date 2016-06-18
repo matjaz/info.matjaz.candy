@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Settings</title>
+  </head>
+  <body>
+    <h1>Candy settings</h1>
+    <fieldset>
+      <legend>API</legend>
+      <div class="field row">
+        <label for="apiToken">API Token</label>
+        <input id="apiToken" type="text" placeholder="copy token" style="width:260px">
+      </div>
+    </fieldset>
+    <button class="right" onclick="save()">Save changes</button>
+    <script>
+    function onHomeyReady() {
+      Homey.get('apiToken', function(err, apiToken) {
+        var set
+        if (err) {
+          console.error(err)
+        } else {
+          if (!apiToken) {
+            apiToken = parent.bearer_token
+            set = true
+          }
+          document.getElementById('apiToken').value = apiToken
+          if (set) {
+            save()
+          }
+        }
+        Homey.ready()
+      })
+    }
+    function save() {
+      Homey.set('apiToken', document.getElementById('apiToken').value)
+    }
+    </script>
+  </body>
+</html>
