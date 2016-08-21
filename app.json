@@ -6,7 +6,7 @@
   "description": {
     "en": "Homey productivity boost"
   },
-  "version": "0.1.2",
+  "version": "0.2.0",
   "compatibility": "0.x",
   "category": [
     "tools"
@@ -41,6 +41,24 @@
           "placeholder": {
             "en": "Folder name..."
           }
+        },
+        {
+          "name": "which",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "current",
+              "label": {
+                "en": "Current folder only"
+              }
+            },
+            {
+              "id": "all",
+              "label": {
+                "en": "Current and descendant folders"
+              }
+            }
+          ]
         }
       ]
     }, {
@@ -55,6 +73,24 @@
           "placeholder": {
             "en": "Folder name..."
           }
+        },
+        {
+          "name": "which",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "current",
+              "label": {
+                "en": "Current folder only"
+              }
+            },
+            {
+              "id": "all",
+              "label": {
+                "en": "Current and descendant folders"
+              }
+            }
+          ]
         }
       ]
     }]
