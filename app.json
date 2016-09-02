@@ -37,6 +37,13 @@
         "nl": "Homey gestart"
       }
     }],
+    "conditions": [{
+      "id": "systemCloudConnected",
+      "title": {
+        "en": "!{{Connected|No connection}} to cloud",
+        "nl": "!{{Verbinding|Geen verbinding}} met cloud"
+      }
+    }],
     "actions": [{
       "id": "enableFolderFlows",
       "title": {
