@@ -43,6 +43,28 @@
         "en": "!{{Connected|No connection}} to cloud",
         "nl": "!{{Verbinding|Geen verbinding}} met cloud"
       }
+    },{
+      "id": "systemFlowTimeout",
+      "title": {
+        "en": "Flow !{{not|}} run in last",
+        "nl": "Flow !{{niet|}} uitgevoerd laatste"
+      },
+      "args": [
+        {
+          "name": "timeout",
+          "type": "number",
+          "placeholder": {
+            "en": "5"
+          }
+        },{
+          "name": "units",
+          "type": "autocomplete",
+          "placeholder": {
+            "en": "Units...",
+            "nl": "Eenheid..."
+          }
+        }
+      ]
     }],
     "actions": [{
       "id": "enableFolderFlows",
