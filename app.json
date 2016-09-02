@@ -4,9 +4,10 @@
     "en": "Candy"
   },
   "description": {
-    "en": "Homey productivity boost"
+    "en": "Homey productivity boost",
+    "nl": "Homey productiviteitsboost"
   },
-  "version": "0.2.0",
+  "version": "0.3.0",
   "compatibility": "0.x",
   "category": [
     "tools"
@@ -29,17 +30,26 @@
     "small": "assets/images/small.png"
   },
   "flow": {
+    "triggers": [{
+      "id": "systemInitiated",
+      "title": {
+        "en": "Homey initiated",
+        "nl": "Homey gestart"
+      }
+    }],
     "actions": [{
       "id": "enableFolderFlows",
       "title": {
-        "en": "Enable all folder flows"
+        "en": "Enable all folder flows",
+        "nl": "Activeer flows in een map"
       },
       "args": [
         {
           "name": "folder",
           "type": "autocomplete",
           "placeholder": {
-            "en": "Folder name..."
+            "en": "Folder name...",
+            "nl": "Naam map..."
           }
         },
         {
@@ -49,13 +59,15 @@
             {
               "id": "current",
               "label": {
-                "en": "Current folder only"
+                "en": "Current folder only",
+                "nl": "Alleen deze map"
               }
             },
             {
               "id": "all",
               "label": {
-                "en": "Current and descendant folders"
+                "en": "Current and descendant folders",
+                "nl": "Deze en onderliggende mappen"
               }
             }
           ]
@@ -64,14 +76,16 @@
     }, {
       "id": "disableFolderFlows",
       "title": {
-        "en": "Disable all folder flows"
+        "en": "Disable all folder flows",
+        "nl": "Deactiveren flows in een map"
       },
       "args": [
         {
           "name": "folder",
           "type": "autocomplete",
           "placeholder": {
-            "en": "Folder name..."
+            "en": "Folder name...",
+            "nl": "Naam map..."
           }
         },
         {
@@ -81,13 +95,15 @@
             {
               "id": "current",
               "label": {
-                "en": "Current folder only"
+                "en": "Current folder only",
+                "nl": "Alleen deze map"
               }
             },
             {
               "id": "all",
               "label": {
-                "en": "Current and descendant folders"
+                "en": "Current and descendant folders",
+                "nl": "Deze en onderliggende mappen"
               }
             }
           ]
