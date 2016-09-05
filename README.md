@@ -7,7 +7,7 @@ Homey productivity boost.
 
 ## Condition cards
 - Cloud connected
-- Check when has run (not survices reboot)
+- Check when has run (not survives reboot)
 
 ## Action cards
 - Enable/disable all flows in folder
