@@ -2,6 +2,13 @@
 
 Homey productivity boost.
 
+## Trigger cards
+- Homey started
+
+## Condition cards
+- Cloud connected
+- Check when has run (not survives reboot)
+
 ## Action cards
 - Enable/disable all flows in folder
 
