@@ -10,6 +10,7 @@ Homey productivity boost.
 - Check when has run (not survives reboot)
 
 ## Action cards
+- Reboot Homey
 - Enable/disable all flows in folder
 
 ## Setup
