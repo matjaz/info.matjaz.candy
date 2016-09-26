@@ -144,6 +144,11 @@
         "en": "Reboot Homey",
         "nl": "Reboot Homey"
       }
+    }, {
+      "id": "restart_mcu",
+      "title": {
+        "en": "Restart Microcontroller"
+      }
     }]
   }
 }
