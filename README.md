@@ -11,6 +11,7 @@ Homey productivity boost.
 
 ## Action cards
 - Reboot Homey
+- Restart Microcontroller
 - Enable/disable all flows in folder
 
 ## Setup
