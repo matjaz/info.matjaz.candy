@@ -7,7 +7,7 @@
     "en": "Homey productivity boost",
     "nl": "Homey productiviteitsboost"
   },
-  "version": "0.3.0",
+  "version": "0.5.2",
   "compatibility": "0.x",
   "category": [
     "tools"
@@ -138,6 +138,17 @@
           ]
         }
       ]
+    }, {
+      "id": "reboot",
+      "title": {
+        "en": "Reboot Homey",
+        "nl": "Reboot Homey"
+      }
+    }, {
+      "id": "restart_mcu",
+      "title": {
+        "en": "Restart Microcontroller"
+      }
     }]
   }
 }
