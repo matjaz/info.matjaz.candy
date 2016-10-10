@@ -8,6 +8,7 @@ Homey productivity boost.
 ## Condition cards
 - Cloud connected
 - Check when has run (not survives reboot)
+- Check lastupdate of device value (Homey v 0.10.4)
 
 ## Action cards
 - Reboot Homey
