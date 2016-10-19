@@ -4,11 +4,13 @@ Homey productivity boost.
 
 ## Trigger cards
 - Homey started
+- New firmware update (checks every 15 minutes, triggers once)
 
 ## Condition cards
 - Cloud connected
 - Check when has run (not survives reboot)
 - Check lastupdate of device value (Homey v 0.10.4)
+- Check for new firmware
 
 ## Action cards
 - Reboot Homey

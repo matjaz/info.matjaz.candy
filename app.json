@@ -7,8 +7,8 @@
     "en": "Homey productivity boost",
     "nl": "Homey productiviteitsboost"
   },
-  "version": "0.6.1",
-  "compatibility": "0.x",
+  "version": "0.7.0",
+  "compatibility": "0.10.x",
   "category": [
     "tools"
   ],
@@ -40,6 +40,31 @@
         "en": "Homey initiated",
         "nl": "Homey gestart"
       }
+    },{
+      "id": "systemNewFirmware",
+      "title": {
+        "en": "New Homey firmware",
+        "nl": "Nieuwe Homey firmware"
+      },
+      "tokens": [{
+        "name":"currentVersion",
+        "title":{
+          "en":"current",
+          "nl":"huidige"
+        },
+        "example":{
+          "en":"0.10.5"
+        }
+      },{
+        "name":"newVersion",
+        "title":{
+          "en":"new",
+          "nl":"nieuwe"
+        },
+        "example":{
+          "en":"1.0.0"
+        }
+      }]
     }],
     "conditions": [{
       "id": "systemCloudConnected",
@@ -98,6 +123,12 @@
           }
         }
       ]
+    },{
+      "id": "systemNewFirmware",
+      "title": {
+        "en": "!{{New|No new}} firmware",
+        "nl": "!{{Nieuwe|Geen nieuwe}} firmware"
+      }
     }],
     "actions": [{
       "id": "enableFolderFlows",
