@@ -4,7 +4,7 @@ Homey productivity boost.
 
 ## Trigger cards
 - Homey started
-- New firmware update (checks every 15 minutes, triggers once)
+- New firmware update (checks every 15 minutes)
 
 ## Condition cards
 - Cloud connected
