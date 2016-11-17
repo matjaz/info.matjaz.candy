@@ -16,6 +16,7 @@ Homey productivity boost.
 - Reboot Homey
 - Restart Microcontroller
 - Enable/disable all flows in folder
+- Add a notification (starting from Homey 1.0.0)
 
 ## Setup
 To setup Candy app, make sure API token is set in [app settings][app-settings-link].
