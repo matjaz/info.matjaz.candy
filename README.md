@@ -5,6 +5,7 @@ Homey productivity boost.
 ## Trigger cards
 - Homey started
 - New firmware update (checks every 15 minutes)
+- App crashed
 
 ## Condition cards
 - Cloud connected
