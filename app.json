@@ -7,8 +7,8 @@
     "en": "Homey productivity boost",
     "nl": "Homey productiviteitsboost"
   },
-  "version": "0.7.2",
-  "compatibility": "0.10.x || 1.x",
+  "version": "0.7.3",
+  "compatibility": "1.x",
   "category": [
     "tools"
   ],
@@ -65,6 +65,27 @@
           "en":"1.0.0"
         }
       }]
+    }, {
+      "id": "appCrashed",
+      "title": {
+        "en": "App crashed"
+      },
+      "tokens": [
+        {
+          "name": "id",
+          "title": {
+            "en": "ID",
+            "nl": "ID"
+          }
+        },
+        {
+          "name": "message",
+          "title": {
+            "en": "Message",
+            "nl": "Bericht"
+          }
+        }
+      ]
     }],
     "conditions": [{
       "id": "systemCloudConnected",
