@@ -7,8 +7,8 @@
     "en": "Homey productivity boost",
     "nl": "Homey productiviteitsboost"
   },
-  "version": "0.7.3",
-  "compatibility": "1.x",
+  "version": "0.7.4",
+  "compatibility": "1.2.x",
   "category": [
     "tools"
   ],
@@ -230,19 +230,34 @@
         "nl": "Reboot Homey"
       }
     }, {
+      "id": "restart_app",
+      "title": {
+        "en": "Restart app"
+      },
+      "args": [
+        {
+          "name": "app",
+          "type": "autocomplete",
+          "placeholder": {
+            "en": "App name...",
+            "nl": "Naam app..."
+          }
+        }
+      ]
+    }, {
       "id": "notification",
       "title": {
         "en": "Add notification",
         "nl": "Stuur notificatie"
       },
-	  "args": [
-					{
-						"name": "noti",
-						"type": "text",
-						"placeholder": { "en": "Notification!","nl": "Notificatie!" }
-					}
-				]
-    },{
+      "args": [
+        {
+          "name": "noti",
+          "type": "text",
+          "placeholder": { "en": "Notification!","nl": "Notificatie!" }
+        }
+      ]
+    }, {
       "id": "restart_mcu",
       "title": {
         "en": "Restart Microcontroller"
