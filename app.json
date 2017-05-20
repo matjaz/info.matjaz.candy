@@ -8,7 +8,7 @@
     "nl": "Homey productiviteitsboost"
   },
   "version": "0.7.4",
-  "compatibility": "1.2.x",
+  "compatibility": ">=1.2.0",
   "category": [
     "tools"
   ],
