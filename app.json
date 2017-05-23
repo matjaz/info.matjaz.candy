@@ -7,7 +7,7 @@
     "en": "Homey productivity boost",
     "nl": "Homey productiviteitsboost"
   },
-  "version": "0.7.5",
+  "version": "0.7.6",
   "compatibility": ">=1.2.0 <2.0.0",
   "category": [
     "tools"
@@ -241,6 +241,20 @@
           "placeholder": {
             "en": "App name...",
             "nl": "Naam app..."
+          }
+        }
+      ]
+    }, {
+      "id": "restart_app_id",
+      "title": {
+        "en": "Restart app by ID"
+      },
+      "args": [
+        {
+          "name": "id",
+          "type": "text",
+          "placeholder": {
+            "en": "App ID..."
           }
         }
       ]
