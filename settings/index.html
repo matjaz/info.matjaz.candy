@@ -8,32 +8,42 @@
     <fieldset>
       <legend>API</legend>
       <div class="field row">
-        <label for="apiToken">API Token</label>
-        <input id="apiToken" type="text" placeholder="copy token" style="width:260px">
+        <label for="apiToken">API Token <a style="font-size:10px" href="https://my.athom.com" target="_blank">(get it here)</a></label>
+        <input id="apiToken" type="text" placeholder="paste token" style="width:260px">
+        <a id="tt" style="display:none;font-size:10px" href="#" onclick="test()">(test)</a>
       </div>
     </fieldset>
     <button class="right" onclick="save()">Save changes</button>
     <script>
+    var tokenSet
     function onHomeyReady() {
       Homey.get('apiToken', function(err, apiToken) {
-        var set
-        if (err) {
-          console.error(err)
-        } else {
-          if (!apiToken) {
-            apiToken = parent.bearer_token
-            set = true
-          }
+        if (apiToken) {
           document.getElementById('apiToken').value = apiToken
-          if (set) {
-            save()
-          }
+          tokenAvailable()
         }
         Homey.ready()
       })
     }
     function save() {
       Homey.set('apiToken', document.getElementById('apiToken').value)
+      tokenAvailable()
+    }
+    function tokenAvailable () {
+      tokenSet = true
+      document.getElementById('tt').style.display = 'inline'
+    }
+    function test () {
+      if (!tokenSet) {
+        return
+      }
+      Homey.api('GET', '/systemInfo', function (err, result) {
+        if (result) {
+          Homey.alert(__('settings.hello', {name: result.hostname}))
+        } else if (err) {
+          Homey.alert(err)
+        }
+      })
     }
     </script>
   </body>

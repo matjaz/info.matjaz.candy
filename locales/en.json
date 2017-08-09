@@ -7,5 +7,8 @@
     "weeks": "Weeks",
     "months": "Months",
     "years": "Years"
+  },
+  "settings": {
+  	"hello": "Hello, __name__"
   }
 }
