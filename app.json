@@ -7,8 +7,8 @@
     "en": "Homey productivity boost",
     "nl": "Homey productiviteitsboost"
   },
-  "version": "0.7.6",
-  "compatibility": ">=1.2.0 <2.0.0",
+  "version": "0.7.7",
+  "compatibility": ">=1.5.0 <2.0.0",
   "category": [
     "tools"
   ],
@@ -43,8 +43,8 @@
     },{
       "id": "systemNewFirmware",
       "title": {
-        "en": "New Homey firmware",
-        "nl": "Nieuwe Homey firmware"
+        "en": "New Homey firmware available",
+        "nl": "Nieuwe Homey firmware beschikbaar"
       },
       "tokens": [{
         "name":"currentVersion",

@@ -11,11 +11,12 @@ Homey productivity boost.
 - Cloud connected
 - Check when has run (not survives reboot)
 - Check lastupdate of device value (Homey v 0.10.4)
-- Check for new firmware
+- New firmware available
 
 ## Action cards
 - Reboot Homey
 - Restart Microcontroller
+- Restart app
 - Enable/disable all flows in folder
 - Add a notification (starting from Homey 1.0.0)
 
